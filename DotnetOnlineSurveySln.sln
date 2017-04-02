@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DotnetOnlineSurvey", "http://localhost:34832", "{83A23FD9-5576-4C66-B61F-B6139F01BFB0}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{52429432-1941-4bfc-ac12-01f8657ab95d}|BALOnlineSurvey.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_34832"
+		Debug.AspNetCompiler.PhysicalPath = "DotnetOnlineSurvey\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_34832\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_34832"
+		Release.AspNetCompiler.PhysicalPath = "DotnetOnlineSurvey\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_34832\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "DotnetOnlineSurvey\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALOnlineSurvey", "DALOnlineSurvey\DALOnlineSurvey.csproj", "{03FE00A8-8877-47BB-B5B4-3F0087E3314A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BALOnlineSurvey", "BALOnlineSurvey\BALOnlineSurvey.csproj", "{52429432-1941-4BFC-AC12-01F8657AB95D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83A23FD9-5576-4C66-B61F-B6139F01BFB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A23FD9-5576-4C66-B61F-B6139F01BFB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A23FD9-5576-4C66-B61F-B6139F01BFB0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A23FD9-5576-4C66-B61F-B6139F01BFB0}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{03FE00A8-8877-47BB-B5B4-3F0087E3314A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03FE00A8-8877-47BB-B5B4-3F0087E3314A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03FE00A8-8877-47BB-B5B4-3F0087E3314A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03FE00A8-8877-47BB-B5B4-3F0087E3314A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52429432-1941-4BFC-AC12-01F8657AB95D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52429432-1941-4BFC-AC12-01F8657AB95D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52429432-1941-4BFC-AC12-01F8657AB95D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52429432-1941-4BFC-AC12-01F8657AB95D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

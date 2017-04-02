@@ -1,0 +1,603 @@
+﻿@font-face { 
+  font-family: Yanone Kaffeesatz; 
+    src: url('../fonts/YanoneKaffeesatz-Regular.eot'); 
+    src: local("Yanone Kaffeesatz"), url('../fonts/YanoneKaffeesatz-Regular.ttf'); 
+} 
+
+@font-face { 
+  font-family: News Cycle; 
+    src: url('../fonts/NewsCycle-Regular.eot'); 
+    src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf'); 
+} 
+
+html { 
+  height: 100%;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+/* tell the browser to render HTML 5 elements as block */
+article, aside, figure, footer, header, hgroup, nav, section { 
+  display:block;
+}
+
+body { 
+  font: normal .80em arial, sans-serif;
+  background: #000 url(images/pattern.png);
+  color: #444;
+}
+
+p { 
+  padding: 0 0 20px 0;
+  line-height: 1.7em;
+}
+
+img { 
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  color: #362C20;
+  letter-spacing: 0em;
+  padding: 0 0 5px 0;
+}
+
+h1, h2, h3 { 
+  font: normal 170% "News Cycle", arial, sans-serif;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+  color: #222;
+}
+
+h2 { 
+  font-size: 160%;
+  padding: 9px 0 5px 0;
+  color: #F67400;
+}
+
+h3 { 
+  font-size: 140%;
+  padding: 5px 0 0 0;
+}
+
+h4, h6 { 
+  color: #F67400;
+  padding: 0 0 5px 0;
+  font: normal 130% arial, sans-serif;
+}
+
+h5, h6 { 
+  color: #555;
+  font: italic 95% arial, sans-serif;
+  letter-spacing: normal;
+  padding: 0 0 15px 0;
+}
+
+a, a:hover { 
+  outline: none;
+  text-decoration: underline;
+  color: #09BCE8;
+}
+
+a:hover { 
+  text-decoration: none;
+}
+
+blockquote { 
+  margin: 20px 0; 
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: #FFF;
+}
+
+ul { 
+  margin: 2px 0 22px 17px;
+}
+
+ul li { 
+  list-style-type: circle;
+  margin: 0 0 6px 0; 
+  padding: 0 0 4px 5px;
+  line-height: 1.5em;
+}
+
+ol { 
+  margin: 8px 0 22px 20px;
+}
+
+ol li { 
+  margin: 0 0 11px 0;
+}
+
+.left { 
+  float: left;
+  width: auto;
+  margin-right: 10px;
+}
+
+.right { 
+  float: right; 
+  width: auto;
+  margin-left: 10px;
+}
+
+.center { 
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#main, nav, #container, #logo, #site_content, footer { 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+#main {
+  margin: 5px auto;
+  width: 100%;
+  background: transparent;
+  padding-bottom: 30px;
+}
+
+
+header { 
+  background: transparent;
+  height: 150px;
+}
+
+#logo { 
+  width: 100%;
+  height: 150px;
+  background: transparent;
+  color: #888;
+  padding: 0 0 0 25px;
+  float: left;
+}
+
+#logo h1, #logo h2 { 
+  font: normal 320% 'News Cycle', arial, sans-serif;
+  border-bottom: 0;
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover { 
+  padding: 0;
+  color: #444;
+  text-decoration: none;
+}
+
+#logo_text h1 a .logo_colour { 
+  color: #09BCE8;
+}
+
+#logo_text a:hover .logo_colour { 
+  color: #444;
+}
+
+#logo_text h2 { 
+  font-size: 140%;
+  padding: 0;
+  color: #222;
+}
+
+nav { 
+  height: 44px;
+  width: 100%;
+  float: right;
+  margin: -20px auto 20px auto;
+  color: #222;
+  background: #333; /* Show a solid color for older browsers */
+  background: -moz-linear-gradient(#444, #222);
+  background: -o-linear-gradient(#444, #222);
+  background: -webkit-linear-gradient(#444, #222);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  border: 1px solid #222;
+} 
+
+#site_content { 
+  width: 100%;
+  overflow: hidden;
+  margin: 20px auto;
+  background: #FFF;
+} 
+
+#sidebar_container { 
+  float: right;
+  width: 450px;
+  padding: 0;
+  height: 450px;
+}
+
+#content { 
+  text-align: left;
+  width: 440px;
+  margin: 0 0 0 0;
+  float: left;
+  padding: 0 20px 20px 20px;
+}
+  
+#content ul { 
+  margin: 2px 0 22px 0px;
+}
+
+#content ul li, .sidebar ul li { 
+  list-style-type: none;
+  background: url(../images/bullet.png) no-repeat;
+  margin: 0 0 0 0; 
+  padding: 0 0 4px 28px;
+  line-height: 1.5em;
+}
+
+
+
+footer { 
+  width: 100%;
+  font: 140% 'News Cycle', arial, sans-serif;
+  height: 30px;
+
+  bottom:0px;
+  left:0px;
+  padding: 9px 0 15px 0;
+  color: #FFF;
+  text-align: center;
+  background: #333; /* Show a solid color for older browsers */
+  background: -moz-linear-gradient(#444, #222);
+  background: -o-linear-gradient(#444, #222);
+  background: -webkit-linear-gradient(#444, #222);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+  border: 1px solid #222;
+}
+
+footer p { 
+  line-height: 1.7em;
+  padding: 0 0 10px 0;
+}
+
+footer a { 
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+footer a:hover { 
+  color: #222;
+  text-shadow: none;
+  text-decoration: underline;
+}
+
+
+.separator { 
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #D9D5CF;
+  border-bottom: 1px solid #FFF;
+  margin: 0 0 20px 0;
+}
+  
+table { 
+  margin: 10px 0 30px 0;
+    width: 414px;
+}
+
+table tr th, table tr td { 
+ 
+  color: #FFF;
+  padding: 7px 4px;
+  text-align: center;
+}
+  
+table tr td { 
+ 
+  color: #47433F;
+  border-top: 1px solid #FFF;
+}
+
+ul.images {
+  width:450px;
+  height:450px;
+  overflow:hidden;
+  position:relative;
+  margin:0;
+  padding:0;
+} 
+
+ul.images li {
+  position:absolute;
+  margin:0;
+  padding:0;
+  left:0;
+  right:0;
+  list-style:none;
+}
+ 
+ul.images li.show {
+  z-index:500;  
+}
+ 
+ul img {
+  border:none;  
+}
+
+
+
+
+/**
+Stylesheet for SooperFish by www.SooperThemes.com
+Author: Jurriaan Roelofs
+**/
+
+/* Configuration of menu width */
+html body ul.sf-menu ul,html body ul.sf-menu ul li { 
+  width: 220px;
+  float:right;
+}
+
+html body ul.sf-menu ul ul { 
+  margin: 0 0 0 220px;
+}
+
+/* Framework for proper showing/hiding/positioning */
+ul.sf-menu,ul.sf-menu * { 
+  margin: 0;
+  padding: 0;
+}
+
+ul.sf-menu { 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu li { 
+  display: block;
+  list-style: none;
+  float: left;
+  position: relative;
+}
+  
+ul.sf-menu li:hover { 
+  visibility: inherit; /* fixes IE7 'sticky bug' */ 
+}
+
+ul.sf-menu a { 
+  display: block;
+  position: relative;
+  float:right;
+}
+  
+ul.sf-menu ul { 
+  position: absolute;
+  float:right;
+  left: 0;
+  width: 150px; 
+  top: auto;
+  left: -999999px;
+}
+  
+ul.sf-menu ul a { 
+  zoom: 1; /* IE6/7 fix */ 
+}
+
+ul.sf-menu ul li { 
+  float: right; /* Must always be floated otherwise there will be a rogue 1px margin-bottom in IE6/7 */
+  width: 150px;
+}
+  
+ul.sf-menu ul ul { 
+  top: 0;
+  margin: 0 0 0 150px;
+}
+
+ul.sf-menu li:hover ul,ul.sf-menu li:focus ul,ul.sf-menu li.sf-hover ul, 
+ul.sf-menu ul li:hover ul,ul.sf-menu ul li:focus ul,ul.sf-menu ul li.sf-hover ul,
+ul.sf-menu ul ul li:hover ul,ul.sf-menu ul ul li:focus ul,ul.sf-menu ul ul li.sf-hover ul,
+ul.sf-menu ul ul ul li:hover ul,ul.sf-menu ul ul ul li:focus ul,ul.sf-menu ul ul ul li.sf-hover ul { 
+  left: auto;
+}
+  
+ul.sf-menu li:hover ul ul,ul.sf-menu li:focus ul ul,ul.sf-menu li.sf-hover ul ul,
+ul.sf-menu ul li:hover ul ul,ul.sf-menu ul li:focus ul ul,ul.sf-menu ul li.sf-hover ul ul,
+ul.sf-menu ul ul li:hover ul ul,ul.sf-menu ul ul li:focus ul ul,ul.sf-menu ul ul li.sf-hover ul ul,
+ul.sf-menu ul ul ul li:hover ul ul,ul.sf-menu ul ul ul li:focus ul ul,ul.sf-menu ul ul ul li.sf-hover ul ul { 
+  left: -999999px;
+}
+
+/* autoArrows CSS */
+span.sf-arrow { 
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+  display: block;
+  background: url(../images/arrows-white.png) no-repeat 0 0;
+  overflow: hidden; /* making sure IE6 doesn't overflow and expand the box */
+  font-size: 1px;
+}
+
+ul ul span.sf-arrow { 
+  right: 5px;
+  top: 20px;
+  background-position: 0 100%;
+}
+
+/* Theming the menu */
+ul#nav { 
+  float: right;
+}
+
+ul#nav ul { 
+  background: #222;
+  margin-top: 4px;
+  padding-bottom: 15px;
+}
+
+ul#nav li a { 
+  padding: 7px 25px 6px 25px;
+  font: 140% 'News Cycle', arial, sans-serif;
+  text-decoration: none;
+  color: #FFF;
+  margin-right: 2px;
+}
+
+ul#nav li a:hover, ul#nav li a:focus, ul#nav li.selected a, ul#nav li.selected a:hover, ul#nav li.selected a:focus { 
+  color: #09BCE8;
+  text-shadow: none;
+}
+
+ul#nav ul li a { 
+  color: #FFF;
+}
+
+ul#nav ul li a:hover { 
+  color: #09BCE8;
+  margin-right: 2px;
+}
+
+
+
+/* Image Transitions */
+ul#images {
+  margin: 0 15px 10px 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+ul#images li {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  float: left;
+  width: 155px;
+  height: 300px;
+}
+
+.margin_bottom_10
+{
+    clear: both;
+    width: 100%;
+    height: 10px;
+    font-size: 1px;
+}
+.margin_bottom_20
+{
+    clear: both;
+    width: 100%;
+    height: 20px;
+    font-size: 1px;
+}
+.margin_bottom_30
+{
+    clear: both;
+    width: 100%;
+    height: 30px;
+    font-size: 1px;
+}
+.margin_bottom_40
+{
+    clear: both;
+    width: 100%;
+    height: 40px;
+    font-size: 1px;
+}
+.margin_bottom_50
+{
+    clear: both;
+    width: 100%;
+    height: 50px;
+    font-size: 1px;
+}
+.margin_bottom_60
+{
+    clear: both;
+    width: 100%;
+    height: 60px;
+    font-size: 1px;
+}
+#content_wrapper
+{
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#content
+{
+    width: 974px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+
+#content #content_left
+{
+    float: left;
+    width: 290px;
+    height:450px;
+    margin: 0 20px 0 0;
+    padding: 0 39px 0 0;
+    border-right: 1px solid #999;
+}
+
+#content #content_right
+{
+    float: right;
+    width: 600px;
+    height:450px;
+    margin: 0px;
+    border:solid;
+}
+
+/*Ticker For News*/
+* { margin:0; padding:0; }
+
+#newsticker-demo  
+{
+width:290px; 
+background:#EAF4F5; 
+padding:5px 5px 0; 
+font-family:Verdana,Arial,Sans-Serif;
+font-size:12px;
+margin:auto;
+margin-left:5px;
+margin-top:15px;
+    height: 400px;
+    border:solid;
+    }
+
+#newsticker-demo a { text-decoration:none; }
+#newsticker-demo img { border: 2px solid #FFFFFF; }
+
+#newsticker-demo .title {
+text-align:center;
+font-size:14px;
+font-weight:bold;
+padding:5px;
+    width: 253px;
+    background-color:#3B5998;
+    border-color:#3B5998;
+    
+}
+
+.newsticker-jcarousellite { width:270px;
+    height: 3px;
+    border-color:#3B5998;
+}
+.newsticker-jcarousellite ul li{ list-style:none; display:block; padding-bottom:1px; margin-bottom:5px;
+    width: 265px; he:150px; border-color:#3B5998;
+}
+.newsticker-jcarousellite .thumbnail { float:left; width:110px; border-color:#3B5998;}
+.newsticker-jcarousellite .info { float:right; width:90px;
+    height: 67px;border-color:#3B5998;
+}
+.newsticker-jcarousellite .info span.cat { display: block; font-size:10px; color:#808080; }
+
+.clear { clear: both; }

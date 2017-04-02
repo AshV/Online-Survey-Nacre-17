@@ -1,0 +1,221 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Creator/CreatorMaster.master" AutoEventWireup="true" CodeFile="ProfileManagementMaster.master.cs" Inherits="Creator_ProfileManagementMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+     <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+    <link href="../css/styles1.css" rel="stylesheet" />
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <script src="../js/menu_jquery.js"></script>
+    <style type="text/css">
+        .auto-style1
+        {
+            width: 262px;
+        }
+
+        .auto-style2
+        {
+            width: 693px;
+        }
+          #overlay1 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            filter: alpha(opacity=70);
+            -moz-opacity: 0.7;
+            -khtml-opacity: 0.7;
+            opacity: 0.7;
+            z-index: 100;
+            display: none;
+        }
+
+        .content3 a {
+            text-decoration: none;
+        }
+
+        .popup3 {
+            width: 100%;
+            margin: 0 auto;
+            display: none;
+            position: fixed;
+            z-index: 101;
+        }
+
+        .content3{
+            min-width: 600px;
+            width: 600px;
+            min-height: 150px;
+            margin: 100px auto;
+            background: #6B8E23;
+            position: relative;
+            z-index: 103;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px #000;
+        }
+
+            .content3 p {
+                clear: both;
+                color: #555555;
+                text-align: justify;
+            }
+
+                .content3 p a {
+                    color: #d91900;
+                    font-weight: bold;
+                }
+
+                .content3 p:hover {
+                    cursor: pointer;
+                }
+                
+            .content3 .x {
+                float: right;
+                height: 35px;
+                left: 22px;
+                position: relative;
+                top: -25px;
+                width: 34px;
+            }
+
+                .content3 .x:hover {
+                    cursor: pointer;
+                }
+
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            var overlay1 = $('<div id="overlay"></div>');
+            $('.close').click(function () {
+                $('.popup3').hide();
+                overlay1.appendTo(document.body).remove();
+                return false;
+            });
+
+            $('.x').click(function () {
+                $('.popup3').hide();
+                overlay1.appendTo(document.body).remove();
+                return false;
+            });
+
+            $('#crearegroup').click(function () {
+                overlay1.show();
+                overlay1.appendTo(document.body);
+                $('.popup3').show();
+                return false;
+            });
+
+     <%--   $('#btnSubmit').click(function () {
+                if ($('#ddlGroupName').val() > 0) {
+                    return true;
+                }
+                else {
+                    alert("please select any one group");
+                    return false;
+                }
+            });--%>
+
+
+
+              $('#<%=rbGroupName.ClientID%>').click(function () {
+
+                  $('#tblNewGroup').fadeIn();
+
+
+              });
+         <%--  $('#<%=rbExistingGroup.ClientID%>').click(function () {
+
+                $('#tblExistingGroup').fadeIn();
+                $('#tblNewGroup').fadeOut();
+
+            });--%>
+              $('#<%=btnAdd.ClientID%>').click(function () {
+                  var name = $('#<%=txtgroup.ClientID%>').val();
+                var groupdesc = $('#<%=txtdesc.ClientID%>').val();
+                if (name == '' || groupdesc == '') {
+                    $('#<%=lblresult.ClientID%>').text();
+                    return false;
+                }
+                else {
+                    alert(" Successfully group name added");
+                    return true;
+                }
+            });
+              <%--   $('#<%=btnGroup.ClientID%>').click(function () {
+                if ($('#ddlGroup').val() > 0) {
+                    alert("successfully added to existing group");
+                    return true;
+                }
+                else {
+                    alert("please select any group");
+                    return false;
+                }
+            });--%>
+
+          });
+
+    </script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <asp:Label ID="lblError" ForeColor="Red" runat="server" Text=""></asp:Label>
+     <div class='popup3'>
+            <div class='content3'>
+                <img src="../images/Close1.jpg" alt='quit' class='x' id='x' />
+                <asp:RadioButton ID="rbGroupName" runat="server" GroupName="rd" Text="New Group" />
+                    <br />
+                    <table id="tblNewGroup" style="width:500px" >
+                        <tr>
+                            <td style="width:250px">
+                                Enter new group name:
+                               
+                            </td>
+                           <td ><asp:TextBox ID="txtgroup" runat="server"></asp:TextBox></td>
+                        </tr>
+                        <tr>
+                            <td style="width:250px">
+                               Enter Description:  </td>
+                           <td> <asp:TextBox ID="txtdesc" runat="server" TextMode="MultiLine"></asp:TextBox>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <asp:Button ID="btnAdd" runat="server" Text="Add" OnClick="btnAdd_OnClick" />
+                              <asp:Label runat="server" ID="lblresult" Text="please enter group name or description" ></asp:Label> <%-- <input type="button" id="btnAdd" value="Add" onclick="btnaddgroup_click" />--%>
+                            </td>
+                        </tr>
+                       
+                    </table>
+             </div>      
+    </div>
+    <table aria-orientation="horizontal">
+        <tr>
+            <td class="auto-style1" draggable="false" valign="top">
+                <div id='cssmenu'>
+                    <ul>
+                        <li><a href='#'><span style="background-color: chocolate">Contact & Group</span></a></li>
+                        <li class='has-sub'><a href='#'><span>Contact</span></a>
+                            <ul>
+                                <li><a href="AddContacts.aspx"><span>Add Contacts</span></a></li>
+                                <li class=''><a href='ManageContact.aspx'><span>Manage Contact</span></a></li>
+                            </ul>
+                        </li>
+                        <li class='has-sub'><a href='#'><span>Group</span></a>
+                            <ul>
+                                <li><a href='#' id="crearegroup"><span>Create Group</span></a></li>
+                                <li class='last'><a href='ManageGroups.aspx'><span>View & Manage Group</span></a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </td>
+            <td class="auto-style2" valign="top">
+                <asp:ContentPlaceHolder ID="nestedcontent" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+</asp:Content>
+

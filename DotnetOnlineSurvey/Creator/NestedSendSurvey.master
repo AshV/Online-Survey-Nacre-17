@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Creator/CreatorMaster.master" AutoEventWireup="true" CodeFile="NestedSendSurvey.master.cs" Inherits="Creator_NestedSendSurvey" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+     <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+	<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
+    <script src="../js/jquery-1.9.1.js"></script>
+    <script src="../js/jquery-1.10.4-ui.js"></script>
+    <script src="../js/menu_jquery.js"></script>
+    <link href="../css/styles1.css" rel="stylesheet" />
+  
+   
+<style type="text/css">
+    .auto-style1 {
+         text-align:left;
+         vertical-align:top;
+         padding:0;
+        width: 262px;
+    }
+    .auto-style2 {
+        width: 693px;
+    }
+</style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server" >
+     <table aria-orientation="horizontal" style="width:100%">
+        <tr>
+            <td class="auto-style1">
+     <div id='cssmenu'>
+            <ul>
+                <li><a href='SendByManually.aspx'><span>Send manually</span></a></li>
+                <li class='has-sub'><a href='#'><span>Existing contacts</span></a>
+                    <ul>
+                        <li><a href="SendByGroups.aspx"><span>Send By Groups</span></a></li>
+                        <li class='last'><a href='SendByContact.aspx'><span>Send By Contacts</span></a></li>
+                    </ul>
+                </li>
+                <li class='last'><a href='#'><span>Share</span></a></li>
+            </ul>
+        </div>
+</td>
+<td class="auto-style2">
+    <asp:ContentPlaceHolder ID="nestedcontent" runat="server"  >
+       
+       
+       
+       
+    </asp:ContentPlaceHolder>
+    </td>
+            </tr>
+    </table>
+</asp:Content>
+

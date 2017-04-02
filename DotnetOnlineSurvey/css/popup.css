@@ -1,0 +1,137 @@
+﻿#createown {
+    background-color: #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    /*min-width: 200px;*/
+    min-width:350px;
+    min-height: 350px;
+    padding: 25px;
+}
+#Add_From_Excel {
+    background-color: #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    /*min-width: 200px;*/
+    min-width:350px;
+    min-height: 80px;
+    padding: 25px;
+}
+#Add_From_Database {
+    background-color: #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    /*min-width: 200px;*/
+    min-width:350px;
+    min-height: 350px;
+    padding: 25px;
+}
+#existingsurvey{
+    background-color: #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    /*min-width: 200px;*/
+    min-width:350px;
+    min-height: 350px;
+    padding: 25px;
+}
+
+ #qTypeAndTextEdit{
+    background-color: #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    /*min-width: 200px;*/
+    min-width:350px;
+    min-height: 350px;
+    padding: 25px;
+}
+
+#divUpdateName {
+    background-color: #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    /*min-width: 200px;*/
+    min-width:350px;
+    max-height:50px;
+    min-height: 20px;
+    padding: 25px;
+}
+#popupcreateques {
+    background-color: #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    /*min-width: 200px;*/
+    min-width:350px;
+    min-height: 350px;
+    padding: 25px;
+}
+
+#popup .logo {
+    color: #2B91AF;
+    font: bold 325% 'Petrona',sans;
+}
+
+.button.b-close, .button.bClose {
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: none;
+    font: bold 131% sans-serif;
+    padding: 0 6px 2px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+}
+
+.button {
+    background-color: #2B91AF;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+#element_to_pop_up12 { 
+      background-color: #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    min-width: 450px;
+    min-height: 250px;
+    padding: 25px;
+}
+#Edit_Question_Div{ 
+      background-color: #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    min-width: 450px;
+    min-height: 250px;
+    padding: 25px;
+}
+
+.b-close{
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: none;
+    font: bold 131% sans-serif;
+    padding: 0 6px 2px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+}

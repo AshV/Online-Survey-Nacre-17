@@ -1,0 +1,101 @@
+﻿
+        /*----------------data Table GridView Css----------------------*/
+        .EU_TableScroll
+        {
+            max-height: 275px;
+            overflow: auto;
+            border:1px solid #ccc;
+            
+        }
+
+        .EU_DataTable
+        {
+            border-collapse: collapse;
+            width:100%;
+        }
+
+            .EU_DataTable tr th
+            {
+                background-color: #3c454f;
+                color: #ffffff;
+                padding: 10px 5px 10px 5px;
+                border: 1px solid #cccccc;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: normal;
+                text-transform:capitalize;
+                
+            }
+
+            /*.EU_DataTable tr:nth-child(2n+2)
+            {
+                background-color: #f3f4f5;
+            }
+
+            .EU_DataTable tr:nth-child(2n+1) td
+            {
+                background-color: #d6dadf;
+                  /*background-color: #f3f4f5;*/
+                /*color: #454545;*/
+            /*}*/
+
+            .EU_DataTable tr td
+            {
+                padding: 5px 10px 5px 10px;
+                color: #454545;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                border: 1px solid #cccccc;
+                vertical-align: middle;
+            }
+
+                .EU_DataTable tr td:first-child
+                {
+                    text-align: center;
+                }
+        /*------------------------------------Button-----------------------------*/
+        
+        
+.button_example{
+border:1px solid #cacaca;
+ -webkit-border-radius: 3px; 
+ -moz-border-radius: 3px;
+
+ font-size:14px;
+font-family: Arial, Helvetica, sans-serif;
+   text-decoration:none;
+    display:inline-block;   
+    color: black;
+    padding: 10px 10px 10px 10px;
+ background-color: #E6E6E6;
+  background-image: linear-gradient(to bottom, #E6E6E6, #CCCCCC);
+}
+
+.button_example:hover{
+ border: 1px solid #b3b3b3;
+    background-color: #cdcdcd; background-image: linear-gradient(to bottom, #cdcdcd, #b3b3b3);
+ }
+
+-------------------file upload----------
+
+.Cntrl1
+      {
+   background-color:#abcdef;
+      color: #000000;
+       font-size:14px;
+border: 1px solid #AB00CC;
+ text-decoration:none;
+      display:inline-block;   
+     border:1px solid #cacaca;
+     padding: 10px 10px 10px 10px;
+       font-family: Palatino Linotype, Arial, Helvetica;
+    text-align: center;
+    -moz-border-radius: 3px;
+padding: 10px 10px 10px 10px;
+background-image: linear-gradient(to bottom, #E6E6E6, #CCCCCC);
+}
+      
+      .Cntrl1:hover{
+ border: 1px solid #b3b3b3;
+    background-color: #cdcdcd; background-image: linear-gradient(to bottom, #cdcdcd, #b3b3b3);
+ }

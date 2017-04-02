@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CreatorMaster.master.cs" Inherits="Creator_CreatorMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Survey Management System</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="main">
+            <header>
+                <div id="logo">
+                    <div id="logo_text">
+                        <!-- class="logo_colour", allows you to change the colour of the text -->
+                        <h1><a href="index.html">NACRE<span class="logo_colour"> Survey Management System</span></a></h1>
+                        <h2>Think Different..!</h2>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="sf-menu" id="nav">
+                        <li><a href="CreatorHomePage.aspx" class="selected">Home</a></li>
+                        <li><a href="AddContacts.aspx">Contacts</a></li>
+                        <li><a href="Default.aspx">Create Survey</a></li>
+                        <li><a href="SendSurvey.aspx">Send Survey</a></li>
+                        <li><a href="SurveyReportPage.aspx">Reports</a></li>
+                        <li><a href="#">Profile</a>
+                            <ul>
+                                <li><a href="ChangePassword.aspx">ChangePassword</a></li>  
+                                <li><a href="../WelcomePage.aspx">Logout</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div id="site_content">
+                <div>
+                    <div class="margin_bottom_20"></div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                   <div class="margin_bottom_20"></div>
+                </div>
+                 
+                <footer>
+                    <p>Copyright @2014 | <a href="http://http://www.nacreservices.com/index.html">Nacre Software Services</a> | Batch 17 DotNet.</p>
+                </footer>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>
